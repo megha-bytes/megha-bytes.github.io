@@ -1,4 +1,4 @@
-# Portfolio Website
+## Portfolio Website
 
 A single-page, animated portfolio site — plain HTML/CSS/JS, no build step, ready for GitHub Pages.
 
