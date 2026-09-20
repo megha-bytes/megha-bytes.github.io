@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Meghana M — Portfolio</title>
+<meta name="description" content="Portfolio of Meghana M — Software Engineer, AI Orchestration & Heterogeneous Compute">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;700&family=Sora:wght@300;400;600;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div class="cursor-glow" id="cursorGlow"></div>
+
+  <div class="blob blob-1"></div>
+  <div class="blob blob-2"></div>
+  <div class="blob blob-3"></div>
+
+  <header class="nav-wrap">
+    <nav class="nav container">
+      <a href="#home" class="logo">MM<span class="dot">.</span></a>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+      <a href="#contact" class="btn btn-small nav-cta">Say Hi</a>
+      <button class="nav-toggle" id="navToggle" aria-label="Toggle menu">
+        <span></span><span></span><span></span>
+      </button>
+    </nav>
+  </header>
+
+  <main>
+    <!-- HERO -->
+    <section id="home" class="hero container">
+      <p class="eyebrow reveal">👋 Hey, I'm</p>
+      <h1 class="hero-title reveal">
+        <span class="typewriter" id="typewriter">Meghana M</span>
+      </h1>
+      <h2 class="hero-sub reveal">I build <span class="highlight">agentic</span> systems and <span class="highlight">on-device</span> AI.</h2>
+      <p class="hero-desc reveal">Software Engineer at Zebra Technologies — Android & heterogeneous compute, agentic orchestration, and on-device vision. Published IEEE researcher in workload optimization.</p>
+      <div class="hero-actions reveal">
+        <a href="#projects" class="btn btn-primary">View Projects <span class="arrow">→</span></a>
+        <a href="#contact" class="btn btn-ghost">Get in touch</a>
+      </div>
+      <div class="scroll-hint reveal">
+        <span></span>
+        <p>scroll</p>
+      </div>
+    </section>
+
+    <!-- ABOUT -->
+    <section id="about" class="about container">
+      <p class="section-tag reveal">01 · About</p>
+      <div class="about-grid">
+        <div class="about-text reveal">
+          <h2>A little about me</h2>
+          <p>I'm a Software Engineer working at the intersection of mathematical workload optimization and AI. I led the algorithm design for an IEEE-published paper on task offloading and scheduling across heterogeneous compute nodes, formulating it as a constrained multi-objective optimization problem.</p>
+          <p>I'm currently deep in two self-driven projects — a systematic ML inference optimization portfolio, and an agentic computer-vision assistant for an OpenCV competition. I care about systems that are fast, measurable, and provably better — not just shipped.</p>
+          <div class="about-stats">
+            <div class="stat">
+              <span class="stat-num" data-count="1">0</span>
+              <span class="stat-label">Year of Experience</span>
+            </div>
+            <div class="stat">
+              <span class="stat-num" data-count="1">0</span>
+              <span class="stat-label">IEEE Publication</span>
+            </div>
+            <div class="stat">
+              <span class="stat-num" data-count="2">0</span>
+              <span class="stat-label">Projects In Progress</span>
+            </div>
+          </div>
+        </div>
+        <div class="about-card reveal">
+          <div class="card-glow"></div>
+          <img class="avatar-img" src="assets/avatar.png" alt="Meghana M">
+          <p class="about-card-caption">Software Engineer · AI Orchestration & Heterogeneous Compute</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- PROJECTS -->
+    <section id="projects" class="projects container">
+      <p class="section-tag reveal">02 · Projects</p>
+      <h2 class="section-title reveal">Things I've built</h2>
+      <p class="section-desc reveal">Published research and a couple of ambitious things I'm currently building.</p>
+
+      <div class="project-grid">
+        <article class="project-card reveal" data-tilt>
+          <div class="project-thumb thumb-1">📊</div>
+          <div class="project-body">
+            <span class="status-badge status-published">Published · IEEE</span>
+            <h3>Task Offloading & Scheduling for Fog Computing</h3>
+            <p>Led algorithm design formulating task placement across heterogeneous compute nodes as a constrained multi-objective optimization problem. Hybrid genetic algorithm beat PSO/Round Robin by up to 47.6% energy savings and 55.9% makespan reduction, validated with one-way ANOVA.</p>
+            <div class="tags">
+              <span>Genetic Algorithms</span><span>iFogSim</span><span>Python</span>
+            </div>
+            <div class="project-links">
+              <a href="https://doi.org/10.1109/WiSPNET64060.2025.11005329" target="_blank">IEEE Xplore ↗</a>
+            </div>
+          </div>
+        </article>
+
+        <article class="project-card reveal" data-tilt>
+          <div class="project-thumb thumb-2">⚡</div>
+          <div class="project-body">
+            <span class="status-badge status-progress">In Progress</span>
+            <h3>ML Inference Optimization Portfolio</h3>
+            <p>A 10-week deep dive across the inference stack: multi-framework porting (PyTorch → ONNX → runtimes), FP32/FP16/INT8 quantization benchmarking, profiling & flame graphs, a custom fused CUDA/ROCm kernel, and dynamic-batching serving optimization.</p>
+            <div class="tags">
+              <span>PyTorch</span><span>ONNX Runtime</span><span>CUDA</span><span>Quantization</span>
+            </div>
+            <div class="project-links">
+              <a href="https://github.com/megha-bytes" target="_blank">GitHub ↗</a>
+            </div>
+          </div>
+        </article>
+
+        <article class="project-card reveal" data-tilt>
+          <div class="project-thumb thumb-3">🛞</div>
+          <div class="project-body">
+            <span class="status-badge status-progress">In Progress · Hackathon</span>
+            <h3>Autonomous Agentic Tire-Change Vision Assistant</h3>
+            <p>Entry for OpenCV AI Competition 2026. OpenCV 5 perceives jack/lug-nut/wheel state; an AWS-hosted agent decides the next step and re-plans on deviation, with a human-approval gate before safety-critical actions.</p>
+            <div class="tags">
+              <span>OpenCV 5</span><span>AWS</span><span>Agentic AI</span><span>Computer Vision</span>
+            </div>
+            <div class="project-links">
+              <a href="https://github.com/megha-bytes" target="_blank">GitHub ↗</a>
+            </div>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- SKILLS -->
+    <section id="skills" class="skills container">
+      <p class="section-tag reveal">03 · Skills</p>
+      <h2 class="section-title reveal">What I work with</h2>
+      <div class="skills-marquee reveal">
+        <div class="marquee-track">
+          <span>C++</span><span>Python</span><span>Java</span><span>Android</span>
+          <span>LangGraph</span><span>TensorFlow Lite</span><span>PyTorch</span><span>OpenCV</span>
+          <span>CUDA</span><span>Docker</span><span>Kubernetes</span><span>Azure</span>
+          <span>CI/CD</span><span>Linux</span><span>Git</span>
+          <!-- duplicate for seamless loop -->
+          <span>C++</span><span>Python</span><span>Java</span><span>Android</span>
+          <span>LangGraph</span><span>TensorFlow Lite</span><span>PyTorch</span><span>OpenCV</span>
+          <span>CUDA</span><span>Docker</span><span>Kubernetes</span><span>Azure</span>
+          <span>CI/CD</span><span>Linux</span><span>Git</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section id="contact" class="contact container">
+      <p class="section-tag reveal">04 · Contact</p>
+      <h2 class="cta-title reveal">Let's build something <span class="highlight">fun</span> together.</h2>
+      <p class="section-desc reveal">Open to freelance work, collabs, or just a good conversation. Drop a line below.</p>
+      <a href="mailto:meghanamadhusudan111@gmail.com" class="btn btn-primary btn-lg reveal">meghanamadhusudan111@gmail.com</a>
+      <div class="socials reveal">
+        <a href="https://github.com/megha-bytes" target="_blank" aria-label="GitHub">GitHub</a>
+        <a href="https://linkedin.com/in/meghana-m" target="_blank" aria-label="LinkedIn">LinkedIn</a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <p>Built with ❤ by Meghana M · <span id="year"></span></p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
